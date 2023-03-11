@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Recursion</title>
+</head>
+<body>
+    <h2>JavaScript Recursion</h2>
+    <p>Open console to see the output</p>
+    <p>Rate: 5</p>
+    <p>Remarks: Recursion is a powerful technique used in programming to solve problems by breaking them down into smaller, simpler sub-problems. The sample code demonstrates how to use recursion to calculate the factorial of a given number.</p>
+    <script>
+        function factorial(n) {
+            if (n === 0) {
+                return 1;
+            } else {
+                return n * factorial(n - 1);
+            }
+        }
+        console.log(factorial(5)); // 120
+</script>
+</body>
+</html>

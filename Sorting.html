@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Sorting</title>
+</head>
+<body>
+    <h2>Sorting</h2>
+    <p>Open console to see the output</p>
+   <p>Rate: 7</p> 
+   <p>
+    Remarks: <br> Sorting is an important algorithmic technique used to arrange elements in a specific order. The sample code demonstrates how to sort arrays using JavaScript's built-in sorting method, Array.prototype.sort(), which sorts the elements of an array in place and returns the sorted array.
+</p>
+    <script>
+        let array = [5, 1, 4, 2, 3];
+        console.log(array.sort()); // [1, 2, 3, 4, 5]
+        console.log(array); // [1, 2, 3, 4, 5]
+        let objectsArray = [        { name: 'John', age: 25 },        { name: 'Mary', age: 30 },        { name: 'Bob', age: 20 }    ];
+    
+    // sort objectsArray by age in ascending order
+    objectsArray.sort(function(a, b) {
+        return a.age - b.age;
+    });
+    
+    console.log(objectsArray);
+    // [{ name: 'Bob', age: 20 }, { name: 'John', age: 25 }, { name: 'Mary', age: 30 }]
+</script>
+</body>
+</html>

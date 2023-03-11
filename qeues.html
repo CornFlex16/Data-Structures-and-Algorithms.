@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Queues</title>
+</head>
+<body>
+    <h2>Queues</h2>
+    <p>Open console to see the output</p>
+    <p>Rate: 3</p>
+    <p>Remarks: Queues are a data structure that follows the First-In-First-Out (FIFO) principle, where the first element that is enqueued will be the first one to be dequeued. The sample code below demonstrates how to create and manipulate a queue using the push and shift methods.</p>
+    <script>
+        let queue = [];
+        queue.push(1);
+        queue.push(2);
+        queue.push(3);
+        console.log(queue); // [1, 2, 3]
+        let firstElement = queue.shift();
+        console.log(firstElement); // 1
+        console.log(queue); // [2, 3]
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Matching and Parsing</title>
+</head>
+<body>
+    <h2>JavaScript String Matching and Parsing</h2>
+    <p>Open console to see the output</p>
+    <p>Rate: 8</p>
+    <p>
+    Remarks: <br> String matching and parsing are important techniques in JavaScript, especially for working with text data. The sample code shows how to use regular expressions and built-in string methods like split and match to search for and manipulate strings.</p>
+
+<script>
+    let text = "The quick brown fox jumps over the lazy dog";
+    
+    // Using regular expression to match a specific pattern
+    let pattern = /quick/;
+    console.log(pattern.test(text)); // true
+    
+    // Using match method to find all matches of a pattern
+    let matches = text.match(/the/gi);
+    console.log(matches); // ["The", "the"]
+    
+    // Using split method to split a string into an array
+    let words = text.split(" ");
+    console.log(words); // ["The", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"]
+    
+    // Using substring method to extract a portion of a string
+    let substring = text.substring(4, 9);
+    console.log(substring); // "quick"
+</script>
+
+</body>
+</html>
